@@ -16,14 +16,14 @@ public class TokenRingProcesos {
 			MPI.COMM_WORLD.Send(buf, 0, 1, MPI.INT, 1, 17);
 			
 			while(true){
-				MPI.COMM_WORLD.Recv(buf, 0, 1, MPI.INT, 4, 17);
+				MPI.COMM_WORLD.Recv(buf, 0, 1, MPI.INT, size-1, 17);
 				System.out.println("Soy "+me +": "+buf[0]);
 				MPI.COMM_WORLD.Send(buf, 0, 1, MPI.INT, 1, 17);
 			}
 			
 		} else {
 			while(true){
-				if(me==4){
+				if(me==(size-1)){
 					MPI.COMM_WORLD.Recv(buf, 0, 1, MPI.INT, me-1, 17);
 					System.out.println("Soy "+me +": "+buf[0]);
 					MPI.COMM_WORLD.Send(buf, 0, 1, MPI.INT, 0, 17);
