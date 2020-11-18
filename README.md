@@ -5,6 +5,6 @@ Compilar (Windows variable global activada):
 
  javac -cp .;%MPJ_HOME%/lib/mpj.jar TokenRingProcesos.java
  
-Ejecutrar (Windows usando cywing):
+Ejecutar (Windows usando cywing):
 
  mpjrun.bat -np 2 TokenRingProcesos
