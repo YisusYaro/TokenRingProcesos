@@ -7,4 +7,4 @@ Compilar (Windows variable global activada):
  
 Ejecutar (Windows usando cywing):
 
- mpjrun.bat -np 2 TokenRingProcesos
+ mpjrun.bat -np n TokenRingProcesos
