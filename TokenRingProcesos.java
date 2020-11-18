@@ -4,7 +4,6 @@ public class TokenRingProcesos {
  public static void main(String args[]) throws Exception {
         int me;
         int size;
-        //int[] recv_buf = { 0 };
         int[] buf = {1001};
 
         MPI.Init(args);
@@ -12,7 +11,6 @@ public class TokenRingProcesos {
         me = MPI.COMM_WORLD.Rank();
         size = MPI.COMM_WORLD.Size();
 
-        //tic = MPI.Wtime();
 
 		if (me == 0) {
 			MPI.COMM_WORLD.Send(buf, 0, 1, MPI.INT, 1, 17);
