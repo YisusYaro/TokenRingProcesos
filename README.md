@@ -3,7 +3,7 @@ Programa concurrente usando paso de mensajes que hace circular un token (mensaje
 
 ### Requisitos:
 
- Instalación correcta de MPJ.
+ Instalación correcta de MPJ para Windows.
 
 ### Compilar (Windows variable global activada):
   ```bash
