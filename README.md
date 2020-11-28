@@ -6,9 +6,13 @@ Programa concurrente usando paso de mensajes que hace circular un token (mensaje
  Instalación correcta de MPJ.
 
 ### Compilar (Windows variable global activada):
-
- javac -cp .;%MPJ_HOME%/lib/mpj.jar TokenRingProcesos.java
+  ```bash
+  javac -cp .;%MPJ_HOME%/lib/mpj.jar TokenRingProcesos.java
+  ```
  
 ### Ejecutar (Windows usando cywing):
+  ```bash
+  mpjrun.bat -np n TokenRingProcesos
+  ```
+ 
 
- mpjrun.bat -np n TokenRingProcesos
